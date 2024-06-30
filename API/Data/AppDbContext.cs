@@ -1,3 +1,4 @@
+using API.Models;
 using Microsoft.EntityFrameworkCore; // library
 
 namespace API.Data // Namespaces are used to organize code into a hierarchical structure, making it easier to manage and avoid naming conflicts.
@@ -9,5 +10,7 @@ namespace API.Data // Namespaces are used to organize code into a hierarchical s
         {
             
         }
+
+        public DbSet<Product> Products { get; set; }  //Products is Table Name in DB
     }
 }
